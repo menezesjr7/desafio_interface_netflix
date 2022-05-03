@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos Base*/
+
+body{
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: whitesmoke;
+}
+
+/*Filme Principal*/
+
+.container{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.filme_principal .container{
+    margin-right: 20%;
+}
+
+.filme_principal{
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.100)), url('../img/alovesobeatiful.jpg');
+    height: 70%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .titulo{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 30%;
+}
+
+.filme_principal .descricao{
+    width: 70%;
+    margin-top: 0.5%;
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: justify;  
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    color: whitesmoke;
+    font-size: 75%;
+    border: none;
+    margin-bottom: 3%;
+    padding: 1%;
+    cursor: pointer;
+  
+}
+
+.botao:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    transition: 0.2s ease all ;
+}
+
+.botao i{
+    margin-right: 3px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel_filmes{
+    margin-top: 5px;
+}
